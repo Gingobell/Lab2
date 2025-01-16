@@ -11,7 +11,7 @@ struct Student {
 void calculateAverage(struct Student *student) {
     int sum = 0;
     for (int i = 0; i < 3; i++) {
-        sum += student->grades[i]
+        sum += student->grades[i];
     }
     student->average = sum / 3.0;  // Calculate and update the average
 }
@@ -26,7 +26,7 @@ int main() {
 
     // Call calculateAverage for each student
     for (int i = 0; i < 3; i++) {
-       calculateAverage(&students[i])
+       calculateAverage(&students[i]);
     }
 
     // Print student details
